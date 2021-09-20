@@ -1,0 +1,51 @@
+object frmMain: TfrmMain
+  Left = 0
+  Top = 0
+  Caption = 'MECA - App'
+  ClientHeight = 492
+  ClientWidth = 303
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Rectangle1: TRectangle
+    Align = Top
+    Fill.Color = claDarkblue
+    Size.Width = 303.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+    object Label1: TLabel
+      Align = Center
+      AutoSize = True
+      StyledSettings = [Family, Style]
+      Margins.Right = 65.000000000000000000
+      Size.Width = 54.000000000000000000
+      Size.Height = 27.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 20.000000000000000000
+      TextSettings.FontColor = claWhite
+      TextSettings.WordWrap = False
+      Text = 'MECA'
+      TabOrder = 0
+    end
+    object Button1: TButton
+      Align = Left
+      Size.Width = 65.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'detailstoolbutton'
+      TabOrder = 1
+      Text = 'Button1'
+    end
+  end
+  object MultiView1: TMultiView
+    MasterButton = Button1
+    Mode = Drawer
+    Size.Width = 250.000000000000000000
+    Size.Height = 442.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+    TabOrder = 2
+  end
+end
